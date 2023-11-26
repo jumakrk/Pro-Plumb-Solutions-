@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1 class="logo"><img src="images/proplumblogo.png" alt="proplumb logo"></h1>
+    <ul class="nav-links">
+      <li><a href="http://127.0.0.1:5500/index.html#">HOME</a></li>
+      <li><a href="http://127.0.0.1:5500/about.html" target="_blank">ABOUT</a></li>
+      <li><a href="#">SERVICES</a></li>
+      <li><a href="http://127.0.0.1:5500/contacts.html" target="_blank">CONTACTS</a></li>
+      <li><a class="btn" href="http://127.0.0.1:5500/sign%20up.html" target="_blank">Sign up</a></li>
+    </ul>
+    <img src="images/menu-btn.png" alt="" class="menu-btn">
+  </nav>
+  
+  <div class="container">
+    <form>
+      <h1>Login</h1>
+      <div class="form-group">
+        <label>Username/Email</label>
+        <input type="text" placeholder="Username/Email" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" placeholder="password" class="form-control" required>
+      </div>
+      <input type="submit" class="btn" value="Login">
+      <p>Don't have an account? <a href="http://127.0.0.1:5500/sign%20up.html">Sign Up.</a></p>
+    </form>
+  </div>
+
+  <!-- js -->
+  <script>
+    const menuBtn = document.querySelector('.menu-btn')
+    const navlinks = document.querySelector('.nav-links')
+
+    menuBtn.addEventListener('click', ()=>{
+      navlinks.classList.toggle('mobile-menu')
+    })
+  </script>
+</body>
+</html>

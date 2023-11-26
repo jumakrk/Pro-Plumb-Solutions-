@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  transition: all 0.4s ease 0;
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
+}
+
+ul {
+  list-style: none;
+}
+
+body , html {
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.logo img {
+  height: 7vmin;
+  visibility: hidden;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 30px;
+}
+
+.nav-links li .about {
+  text-decoration: underline;
+  color: black;
+}
+
+/* header */
+
+header {
+  width: 100vw;
+  height: 30vh;
+  background-image: url(images/Home\ page\ banner.png);
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content {
+  margin-bottom: 150px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.header-content h2 {
+  font-size: 5.5vmin;
+  margin-top: 200px;
+  color: black;
+}
+
+.line {
+  width: 150px;
+  height: 4px;
+  background: black;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.header-content h1 {
+  font-size: 4vmin;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 8px 15px;
+  background: rgb(0, 0, 0);
+  border-radius: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  transition: all 0.5s ease 0;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+/* gallery/ABOUT US */
+
+.about-us .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.about-us .row .col {
+  width: 50%;
+}
+
+.about-us .row .col .company {
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.about-us .row .col .span {
+  font-weight: bolder;
+}
+
+.content-col {
+  width: 40%;
+}
+
+.image-col {
+  width: 60%;
+}
+
+.about-us .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+
+.image-gallery img {
+  max-width: 280px;
+  margin: 10px;
+}
+
+.content-col h1 {
+  font-size: 7vmin;
+  text-align: center;
+}
+
+.content-col p {
+  padding: 0;
+  margin: 30px auto;
+}
+
+.content-col .btn {
+  margin-left: -50px;
+}
+
+.content-col .btn:hover {
+  color: black;
+  background: gray;
+}
+
+.footer {
+  width: 100%;
+  min-height: 100px;
+  padding: 20px 80px;
+  margin: 0;
+  background: black;
+  text-align: center;
+}
+
+.footer p {
+  color: white;
+  margin: 10px auto;
+}
+
+/* MOBILE Responsive*/
+/* Header */
+@media only screen and (max-width:850px){
+  .menu-btn {
+    display: block;
+  }
+  .navbar{
+    padding: 0;
+  }
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-image: url(./images/Home\ page\ banner.png);
+    background-position: top;
+    margin-top: -900px;
+    transition: all 0.5s ease;
+  }
+  .mobile-menu {
+    margin-top: 0px;
+  }
+  .nav-links li {
+    margin: 30px auto;
+  }
+  
+  /* About us */
+  .about-us .col {
+    width: 100%;
+  }
+
+  .image-gallery {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-gallery img {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 15px;
+  }
+}
+
+/* animations */
+img {
+  transition: transform 0.3s ease;
+}
+img:hover {
+  transform: scale(1.1);
+}
+
+.btn:hover {
+  box-shadow: 4px 4px 10px rgb(0, 0, 0);
+}

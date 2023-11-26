@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProPlumb Solutions About</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1 class="logo"><img src="images/proplumblogo.png" alt="proplumb logo"></h1>
+    <ul class="nav-links">
+      <li><a href="http://127.0.0.1:5500/index.html#">HOME</a></li>
+      <li><a  class="about" href="#">ABOUT</a></li>
+      <li><a href="http://127.0.0.1:5500/srvs.html#" target="_blank">SERVICES</a></li>
+      <li><a href="http://127.0.0.1:5500/contacts.html" target="_blank">CONTACTS</a></li>
+      <li><a class="btn" href="http://127.0.0.1:5500/login.html" target="_blank">LOGIN</a></li>
+    </ul>
+    <img src="images/menu-btn.png" alt="" class="menu-btn">
+  </nav>
+
+  <!-- header -->
+
+  <header>
+    <div class="header-content">
+      <h2>ABOUT US</h2>
+    </div>
+  </header>
+
+  <section class="about-us">
+    <div class="row">
+      <div class="col content-col">
+        <h1>ABOUT US</h1>
+        <div class="line"></div>
+        <p>ProPlumb Solutions" is a well-established plumbing company dedicated to providing top-tier plumbing services to residential, commercial, and industrial clients. With a commitment to excellence and a strong focus on customer satisfaction, ProPlumb Solutions has earned a stellar reputation in the plumbing industry.</p>
+        <p class="company">Company Overview</p>
+        <p><span class="span">1. Mission and Values:</span> ProPlumb Solutions is driven by a mission to deliver high-quality plumbing solutions while upholding core values of professionalism, integrity, and exceptional customer service. The company is committed to ensuring the safety and functionality of plumbing systems in homes and businesses.</p>
+        <p><span class="span">2. Expertise:</span> ProPlumb Solutions boasts a team of highly skilled and licensed plumbers who are experts in various aspects of the plumbing industry. Whether it's routine maintenance, emergency repairs, or complex installations, their team is well-equipped to handle any plumbing challenge.</p>
+        <p>Our dedication to providing high-quality plumbing solutions, combined with our cutting-edge technology and environmentally responsible practices, positions us as a premier choice for plumbing needs in our service area.</p>
+      </div>
+      <div class="col image-col">
+        <div class="image-gallery">
+          <img src="images/img1.jpg" alt="img1">
+          <img src="images/img2.jpg" alt="img2">
+          <img src="images/img3.jpg" alt="img3">
+          <img src="images/img4.jpg" alt="img4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <p>Mpaka Rd, 6th floor West Point Building, 6th Floor, Parklands| Nairobi | Phone number  +254-743581831 | Email: jumakrk@gmail.com</p>
+    <p>Copyright © 2023 ProPlumb Solutions</p>
+  </section>
+
+  <script>
+    const menuBtn = document.querySelector('.menu-btn')
+    const navlinks = document.querySelector('.nav-links')
+
+    menuBtn.addEventListener('click', ()=>{
+      navlinks.classList.toggle('mobile-menu')
+    })
+  </script>
+</body>
+</html>
